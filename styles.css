@@ -1,75 +1,129 @@
 /* Ignacio Ramirez
-    04-26-2023
-    Lab 3 
+    05-21-2023
+    Lab 5 
     Color palette: #9D060D,#08080C,#6E3C0D,#F4DBD8
     */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #f4dbd8;
-    font-size: 115%;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    text-align: center;
-    margin-top: .2em;
-    margin-bottom: .4em;
-}
-
-header {
-    border-bottom: solid #08080c;
-    padding-top: .5em;
-    padding-bottom: .5em;
-}
-
-header h1 {
-    color: #9d060d;
-    font-size: 200%;
-    text-shadow: 1px 1px 5px #08080c;
-    /* box-shadow: 2px 2px 2px 2px #08080C ; */
-}
-
-a:link {
-    text-decoration: none;
-    color: white;
-}
-
-a:visited {
-    color: #6e3c0d;
-}
-
-a:hover,
-a:focus {
-    color: #9d060d;
-}
-
-img {
-    height: 50px;
-}
-
-p {
-    font-size: 100%;
-    line-height: 120%;
-    /* text-align: center; */
-}
-
-p::first-letter {
-    color: #9d060d;
-    font-size: x-large;
-}
-
-footer {
-    text-align: center;
-    border: dashed #08080c;
-    padding-bottom: 1em;
-    background-color: #08080c;
-    color: #f4dbd8;
-}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: #f4dbd8;
+        font-size: 100%;
+        width: 80%;
+        max-width: 800px;
+        margin: 0 auto;
+        border: solid black;
+    }
+    
+    a:link {
+        text-decoration: none;
+        color: white;
+    }
+    
+    a:visited {
+        color: #6e3c0d;
+    }
+    
+    a:hover,
+    a:focus {
+        color: #9d060d;
+    }
+    
+    h2,
+    h4 {
+        text-align: center;
+        margin: 1em 0;
+    }
+    
+    p {
+        font-size: 100%;
+        line-height: 120%;
+        text-indent: 1.5em;
+    }
+    
+    header h1, main h3, main h4{
+        font-variant: small-caps;
+    }
+    
+    header {
+        border-bottom: solid #08080c;
+        padding: .5em;
+        margin: .5em 0;
+        overflow: hidden;
+    }
+    
+    header img {
+        height: 40%;
+        max-height: 100px;
+        float: left;
+        margin: .5em 0;
+    }
+    
+    header h1 {
+        color: #9d060d;
+        font-size: 250%;
+        text-shadow: 1px 1px 5px #08080c;
+        margin: 1em .5em;
+        text-align: center;
+    }
+    
+    main {
+        clear: left;
+        padding: 1em;
+    }
+    
+    main h2 {
+        font-size: 175%;
+        text-shadow: 1px 1px 1px #9d060d;
+    }
+    
+    main h3 {
+        font-size: 160%;
+        margin: 1em;
+    }
+    
+    main h4 {
+        font-size: 120%;
+        letter-spacing: .2em;
+    }
+    
+    main p::first-letter {
+        color: #9d060d;
+        font-size: x-large;
+        -webkit-text-stroke: .8px black
+    }
+    
+    section{
+        width: 70%;
+        padding: 0 1.5em;
+        margin: .5em auto;
+    
+    }
+    
+    section h2{
+        width: 40%;
+        float: left;
+        text-align: left;
+        margin: 0;
+    }
+    section p{
+    width: 60%;
+    float: right;
+    margin: .5em 0;
+    }
+    
+    footer {
+        clear: both;
+        padding: 1em 0;
+        background-color: #08080c;
+    }
+    
+    footer p {
+        text-align: center;
+        color: #f4dbd8;
+        font-weight: bold;
+    }
