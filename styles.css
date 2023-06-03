@@ -1,6 +1,6 @@
 /* Ignacio Ramirez
     05-21-2023
-    Lab 5 
+    Lab 7 
     Color palette: #9D060D,#08080C,#6E3C0D,#F4DBD8
     */
 
@@ -45,14 +45,16 @@
         text-indent: 1.5em;
     }
     
-    header h1, main h3, main h4{
+    header h1,
+    main h3,
+    main h4 {
         font-variant: small-caps;
     }
     
     header {
         border-bottom: solid #08080c;
         padding: .5em;
-        margin: .5em 0;
+        margin: 0;
         overflow: hidden;
     }
     
@@ -69,6 +71,29 @@
         text-shadow: 1px 1px 5px #08080c;
         margin: 1em .5em;
         text-align: center;
+    }
+    
+    nav ul {
+        list-style-type: none;
+    }
+    
+    nav ul li {
+        float: left;
+    }
+    
+    nav ul li a {
+        /* in the next version this will be changes to flex so i can cover the whole page */
+        display: block;
+        width: 160px;
+        text-align: center;
+        padding: 1.5em 0;
+        text-decoration: none;
+        background-color: #08080c;
+        font-weight: bold;
+        /* this will be used in the next version, please ignore for now */
+        /* border-radius: 9999px;
+        border-style: solid;
+        border-width: 1px; */
     }
     
     main {
@@ -97,23 +122,24 @@
         -webkit-text-stroke: .8px black
     }
     
-    section{
+    section {
         width: 70%;
         padding: 0 1.5em;
         margin: .5em auto;
     
     }
     
-    section h2{
+    section h2 {
         width: 40%;
         float: left;
         text-align: left;
         margin: 0;
     }
-    section p{
-    width: 60%;
-    float: right;
-    margin: .5em 0;
+    
+    section p {
+        width: 60%;
+        float: right;
+        margin: .5em 0;
     }
     
     footer {
