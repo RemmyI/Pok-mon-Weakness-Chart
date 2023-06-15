@@ -1,13 +1,17 @@
 /* Ignacio Ramirez
-    05-21-2023
-    Lab 7 
-    Color palette: #9D060D,#08080C,#6E3C0D,#F4DBD8
+    06-13-2023
+    Final Term Project
+    Color palette: #9D060D (Red),#08080C (black),#6E3C0D(Dark Brown),#F4DBD8(Light Pink)
     */
 
     * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+    }
+    
+    html {
+        background-image: linear-gradient(180deg, #08080c 0%, #F4DBD8 50%, #9D060D 100%);
     }
     
     body {
@@ -33,6 +37,10 @@
         color: #9d060d;
     }
     
+    li {
+        list-style-type: none;
+    }
+    
     h2,
     h4 {
         text-align: center;
@@ -43,6 +51,7 @@
         font-size: 100%;
         line-height: 120%;
         text-indent: 1.5em;
+        width: 100%;
     }
     
     header h1,
@@ -68,32 +77,37 @@
     header h1 {
         color: #9d060d;
         font-size: 250%;
-        text-shadow: 1px 1px 5px #08080c;
-        margin: 1em .5em;
+        margin: .1em .5em;
         text-align: center;
     }
     
     nav ul {
-        list-style-type: none;
-    }
-    
-    nav ul li {
-        float: left;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #08080c;
+        padding: .5em 0;
     }
     
     nav ul li a {
-        /* in the next version this will be changes to flex so i can cover the whole page */
         display: block;
-        width: 160px;
+        width: 8em;
         text-align: center;
-        padding: 1.5em 0;
+        padding: .5em 0;
         text-decoration: none;
-        background-color: #08080c;
         font-weight: bold;
-        /* this will be used in the next version, please ignore for now */
-        /* border-radius: 9999px;
+        border-radius: 9999px;
         border-style: solid;
-        border-width: 1px; */
+        border-width: 1px;
+    }
+    
+    nav ul li a:visited {
+        color: #9d060d;
+    }
+    
+    nav ul li a:hover,
+    a:focus {
+        color: #f4dbd8;
+        font-style: italic;
     }
     
     main {
@@ -113,33 +127,48 @@
     
     main h4 {
         font-size: 120%;
-        letter-spacing: .2em;
+        padding: .4em 0;
+        width: 100%;
     }
     
-    main p::first-letter {
-        color: #9d060d;
-        font-size: x-large;
-        -webkit-text-stroke: .8px black
+    main p {
+        text-align: center;
     }
-    
-    section {
-        width: 70%;
-        padding: 0 1.5em;
-        margin: .5em auto;
-    
-    }
-    
-    section h2 {
-        width: 40%;
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
         float: left;
-        text-align: left;
-        margin: 0;
+    }
+    section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     }
     
-    section p {
-        width: 60%;
-        float: right;
-        margin: .5em 0;
+    #cal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #cal img {
+        height: 70%;
+        max-height: 30em;
+    }
+    
+    #instructions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #instructions img {
+        width: 50%;
     }
     
     footer {

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Ignacio Ramirez, 6/13/2023 CS 125H - Final Term Project -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weakness Chart</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Pokémon Weakness Chart</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Return Home">Home</a></li>
+            <li><a href="chart.html" title="Weakness Chart">Weakness Chart</a></li>
+        </ul>
+    </nav>
+
+    <main id="cal">
+        <h2>Damage Calculator</h2>
+        <img src="images/Pokemon_Type_Chart.png" alt="Pokémon Type Chart">
+
+        <section id="instructions">
+            <h2>Defense</h2>
+            <ol>
+                <li>Begin at the bottom left of the grid. Move through the X-axis (left and right). Find your Pokémon type.</li>
+                <li>After finding your type, begin to move up the Y-axis (up and down).</li>
+                <li>Everything in this line is what your Pokémon is weakest or most durable against.</li>
+                <li>The higher the number, the higher the damage taken.</li>
+                <li>For example, if you are a Grass defender and your opponent is Fire attacker, you will receive double damage (x2) as indicated by the "2" in the box.</li>
+            </ol>
+            <img src="images/SuperEffective.png" alt="Super Effective text">
+
+            <h2>Attack</h2>
+            <ol>
+                <li>Begin at the bottom left of the grid. Move up the Y-axis (up and down).Find your Pokémon's move type</li>
+                <li>After finding your type, begin to move through the X-axis (left and right).</li>
+                <li>The higher the number, the higher the damage done.</li>
+                <li>Everything in this line is what your Pokémon's move type will do the most or least damage to.</li>
+                <li>For example, if you are a Grass attacker and your opponent is a Fire defender, you will do half damage (1/2) as indicated by the "1/2" in the box.</li>
+            </ol>
+            <img src="images/not_effective.png" alt="Its not very effective text">
+
+        </section>
+
+        <h2>Notes</h2>
+        <p>For further help, please visit <a
+                href="https://www.pkmn.help/defense/?mode=solo&types=normal&ability=none&format=simple"
+                title="Visit the Pokémon Calculator" target="_blank"> Pokémon Type Calculator.</a> This website
+            allows
+            for the input of two Pokémon types, searching for other Pokémon, and generates results. Making it more
+            able
+            to provide better help. This website was also my inspiration.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 </p>
+    </footer>
+</body>
+
+</html>

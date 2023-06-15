@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
-	<!-- Ignacio Ramirez, 6/02/2023 CS 125H - Lab 7 – Term Project Home Page v5 -->
+	<!-- Ignacio Ramirez, 6/13/2023 CS 125H - Final Term Project -->
 	<meta charset="utf-8">
-	<title>Pokémon Weakness Chart</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="styles.css">
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -12,62 +14,80 @@
 
 <body>
 	<header>
-		<img src="images/poke_ball_icon.png" alt="Pokeball icon">
-		<h1>Pokémon Weakness Chart</h1>
+		<h1>Pokémon Battle Helper</h1>
 	</header>
 
 	<nav>
 		<ul>
 			<li><a href="index.html" title="Return Home">Home</a></li>
-			<li><a href="calculator.html" title="Calculate damage">Damage Calculator</a></li>
-			<li><a href="guide.html" title="Go over the basics">Beginners Guide</a></li>
+			<li><a href="chart.html" title="Weakness Chart">Weakness Chart</a></li>
 		</ul>
 	</nav>
 
 	<main>
-		<h2>Pokédex <small><sup>TM</sup></small> </h2>
-		<h3>Searching</h3>
-		<p>In this section I would like that have a input option that would serve as search bar to help filter out
-			what specific Pokémon your looking for. These filtering options would be Name, Number, Type(s). Displayed
-			besides these options will also be a image (maybe a sprite?) of the Pokémon. Once the user has pinpointed
-			the Pokemon they're looking for, they can click on it and have the information displayed. The
-			information planned so far will be what the Pokémon is weak/strong against.</p>
-		<h4>Name</h4>
-		<p>Almost everyone knows who Pikachu is right? Well this filter option would allow the user to be able to
-			search for the Pokémon in mind if they the name in hand.</p>
-		<h4>Number</h4>
-		<p> There are 1010 Pokémon as of right now and every one of them has a number they're attached to. If a name
-			is not the route the user wants to take and they have a number they wish to look for then that would
-			also be an option.</p>
-		<h4>Type</h4>
-		<p>I would like this option to be included as well because maybe the user is looking for a specific type of
-			Pokémon but not as specific as a name or number. This could be used to cast a bigger net so to speak.
-			Rather than a smaller net like name or number.</p>
+		<h2>Beginner's Guide</h2>
+		<p>This website is meant to be a tool for anyone who plays Pokémon games. Wether you are a veteran or a
+			beginner, I think we can all agree there are A LOT of pokémon types and it gets a bit confusing trying
+			to
+			figure out who's weak to what or what does more damage. Thats where this website steps in.
+		</p>
+		<br>
 
+		<h2>The Basics</h2>
 
-		<h3>Attack</h3>
-		<p>This page will be built in a way so that the user can get a information on whether a specific more will
-			be
-			weak against another type or strong against it. By that I am referring to whether the damage taken by
-			your opponent will be half or double or even quadruple. The API I plan to use covers the math needed for
-			this and is pretty simple. The user will see a page of all available types to choose from. They have the
-			option to choose the type that their move is and the opponent Pokemon type. Once chosen the page will
-			display what kind of damage will be done. </p>
+		<aside>
+			<h4>Turn-Based System:</h4>
+			<h4>Moves:</h4>
+			<h4>Type Matchups:</h4>
+			<h4>Battle Strategy:</h4>
+			<h4>HP and Status:</h4>
+			<h4>Experience and Leveling:</h4>
+			<h4>Winning and Rewards:</h4>
+		</aside>
 
-		<article>
-			<h3>Defense</h3>
-			<p>This page will be build similar to the Attack page. The difference with this page will be that the user
-				can choose what 1 or 2 types their own Pokémon are and what weakness they may or may not have. </p>
-		</article>
 		<section>
-			<h2>Notes</h2>
-			<p>My website will take inspiration from the <a href="https://www.pkmn.help/offense/?types=dark+flying"
-					title="Visit the Pokeman Calculator" target="_blank"> Pokemon Type Calculator</a></p>
-			<p>For anyone who may not be familiar with Pokemon at all, visit <a
-					href="https://bulbapedia.bulbagarden.net/wiki/Main_Page" title="Visit Bulbapedia to learn more about
-				Pokemon" target="_blank">Bulbapedia! the community-driven Pokemon encyclopedia.</a> Keep in mind it may be a lot of
-				information to go through, Pokemon has been around for 27 years.</p>
+			<p>The battle proceeds in a turn-based fashion, with each player taking turns to make
+				decisions for their Pokémon.
+			</p>
+			<br>
+			<p>Each Pokémon can perform different moves, which can include offensive attacks, defensive
+				maneuvers, status-altering effects, or healing abilities. Moves have varying types (e.g., Fire, Water,
+				Electric) and power levels.
+			</p>
+			<br>
+			<p>Pokémon types play a crucial role in battles. Each Pokémon has one or two types, and
+				certain types are strong or weak against others. For example, a Water-type move is effective against
+				Fire-types but weak against Grass-types. Understanding type matchups can give you an advantage in
+				battles.
+			</p>
+			<br>
+			<p>Players strategize by considering the type matchups, Pokémon levels, move sets, and
+				other factors. They decide which move to use, whether to switch Pokémon, or use items like healing
+				potions.
+			</p>
+			<br>
+			<p>Pokémon have Hit Points (HP), which represent their health. When a Pokémon's HP reaches
+				zero, it faints and can no longer battle. Moves can also inflict status conditions like poisoning,
+				paralysis, or sleep, affecting a Pokémon's performance.
+			</p>
+			<br>
+			<p>Pokémon gain experience points (XP) when they participate in battles.
+				Accumulating enough XP allows them to level up, increasing their stats and sometimes allowing them to
+				learn new moves or evolve into more powerful forms.
+			</p>
+			<br>
+			<p>The battle continues until one player defeats all of the opposing player's Pokémon.
+				The winning player receives rewards such as money, items, and sometimes the defeated Pokémon may also
+				provide the option to be caught.
+			</p>
+			<br>
 		</section>
+
+		<h2>Notes</h2>
+		<p>For further help, please visit <a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page"
+				title="Visit Bulbapedia to learn more about Pokémon" target="_blank">Bulbapedia! the community-driven
+				Pokémon encyclopedia.</a></p>
+		<p>Please note that there is a lot of information to filter through and the information goes in depth.</p>
 	</main>
 
 	<footer>
